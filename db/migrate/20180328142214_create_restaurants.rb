@@ -3,9 +3,8 @@ class CreateRestaurants < ActiveRecord::Migration[5.1]
     create_table :restaurants do |t|
       t.string :name
       t.string :address
-      t.integer :phone
-      t.text :category
-      t.text :reviews
+      t.string :phone_number
+      t.string :category
 
       t.timestamps
     end
